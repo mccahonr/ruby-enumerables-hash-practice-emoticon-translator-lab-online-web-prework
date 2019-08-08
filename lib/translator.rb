@@ -5,7 +5,6 @@ require 'YAML'
 #def load_library
   # code goes here
 def load_library(file_path)
-  file_path = "./lib/emoticons.yml"
   library = YAML.load_file(file_path)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|
